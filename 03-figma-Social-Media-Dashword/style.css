@@ -8,16 +8,12 @@ body {
 header {
     height: 240px;
     background-color: #20222f;
-    border-radius: 0 0 20px;
+    border-radius: 0 0 20px 20px;
 }
 
 .contenedor {
     position: relative;
-    /* top: 10px; */
-    /* width: 80%; */
     background: #1d1f29;
-    /* margin: 10px auto; */
-    /* padding: 5px; */
     min-height: 870px;
 }
 
