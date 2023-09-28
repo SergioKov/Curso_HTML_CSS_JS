@@ -1,5 +1,7 @@
 L:\DESARROLLO\Documentación\Formación\Front\Curso HTML-CSS 2023
 
+aki otros comentarios
+
 
 //practicar flex con un juego
 https://flexboxfroggy.com/#es
