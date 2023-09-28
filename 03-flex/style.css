@@ -1,0 +1,243 @@
+body {
+    margin: 0;
+    font-family: Inter;
+    background: #1d1f29;
+}
+
+
+header {
+    height: 240px;
+    background-color: #20222f;
+    border-radius: 0 0 20px;
+}
+
+.contenedor {
+    position: relative;
+    /* top: 10px; */
+    /* width: 80%; */
+    background: #1d1f29;
+    /* margin: 10px auto; */
+    /* padding: 5px; */
+    min-height: 870px;
+}
+
+.cabeza {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.dark_mode {
+    color: #8C98C6;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.dark_mode span{
+    margin-right: 10px;
+}
+.row {
+    /* background: #1D1F29; */
+    position: relative;
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    top: -240px;
+}
+h1 {
+    color: white;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+h2 {
+    color: #8C98C6;
+    font-size: 14px;
+    text-align: left;
+    margin: 5px 0 5px;
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    background: #20222f;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.box {
+    width: 255px;
+    height: 231px;
+    background: #252b42;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.box_sm {
+    width: 255px;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+
+.b1 {
+    border-top: 5px solid #0077ff;
+    
+}
+
+.b2 {
+    border-top: 5px solid #00d9ff;
+    
+}
+.b3 {
+    border-top: 5px solid #f784a3;
+    
+}
+.b4 {
+    border-top: 5px solid red;
+    
+}
+
+.red_social {
+    font-size: 12px;
+    font-weight: bold;
+    color: #178FF5;
+    margin: 0 0 30px;
+}
+
+.red_social img {
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+}
+h3 {
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    letter-spacing: -2px;
+    /* background: red; */
+    margin: 20px 0 10px;
+}
+.foll {
+    letter-spacing: 5px;
+    font-size: 12px;
+    color: #8C98C6;
+}
+.today {
+    position: absolute;
+    bottom: 0;
+    /* background: green; */
+    width: 100%;
+    left: 0;
+    color: #1EB589;
+    font-weight: bold;
+    font-size: 12px;
+}
+.red {
+    color: #C4032B!important;
+}
+.today img {
+    margin-right: 8px;
+}
+
+.today.red img {
+    margin-right: 8px;
+    position: relative;
+    bottom: 2px;
+}
+
+.page_views {
+    color: #8C98C6;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.page_views img{
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+}
+
+.num_views {
+    color: white;
+    text-align: left;
+    position: relative;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+.num_views span {
+    color: #1EB589;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    /* background: grey; */
+    /* display: block; */
+}
+.today img,
+.num_views img
+ {
+    position: relative;
+    right: 0;
+    top: -2px;
+}
+
+
+.toggle {
+    display: none;
+  }
+  
+  .label {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-image: linear-gradient( to bottom, #399cd5 0%, #3fcc95 100%);
+    border-radius: 10px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+    padding: 1px;
+}
+  
+.label::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #252b42;
+    transition: transform 0.3s;
+}
+  
+.toggle:checked + .label::after {
+    background-color: #c4032b;
+    transform: translateX(100%);
+}
+
+
+
+
+
+

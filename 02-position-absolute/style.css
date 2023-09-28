@@ -1,0 +1,70 @@
+.contenedor{
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    background: lightgreen;
+    /* top: 150px; */
+}
+
+
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+
+
+
+
+.box-red{
+    background: red;
+}
+
+.box-green{
+    background:green;
+}
+
+.box-blue{
+    background: blue;
+    
+}
+.box-purple{
+    background: purple;
+}
+.box-orange {
+    background: orange;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+/*
+.f_l{
+    float:left;
+}
+.f_r{
+    float:right;
+}
+*/
+.p_bl{
+    bottom: 0;
+    left: 0;
+}
+.p_br{
+    bottom: 0;
+    right: 0;
+}
+
+.p_tl{
+    top: 0;
+    left: 0;
+}
+.p_tr{
+    top: 0;
+    right: 0;
+}
+

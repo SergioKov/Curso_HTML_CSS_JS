@@ -1,0 +1,24 @@
+
+
+
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #FF9800;
+    box-shadow: 300px 0px orange, 150px 150px orange;
+}
+
+
+
+.box::after {
+    content: '';
+    background: #FF9800;
+    position: absolute;
+    left: 150px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border-radius: 50%;
+    box-shadow: -150px 150px purple, 150px 150px purple;
+}

@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+header {
+    background: navy;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 40px; */
+}
+.inner{
+    padding: 10px;
+}
+h1{
+    color: rgb(241, 152, 152);
+}
+
+main {
+    margin-top: 56px;
+    background: #cce5f9;
+    min-height: 600px;
+    margin-bottom: 72px;
+}
+section{
+    margin: 0 -10px;
+    padding: 10px;
+}
+section.impar {
+    /* background: #91e8f3; */
+}
+
+section.par {
+    background: #a9e0fa;
+}
+
+p {
+    margin: 15px 0px;
+}
+
+footer {
+    background: navy;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}

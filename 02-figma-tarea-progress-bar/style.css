@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Ralewey,Georgia, Arial, sans-serif;
+}
+.container {
+    width: 100%;
+    /* height: 800px; */
+    background: #0c122c;
+}
+
+.img_fondo {
+    margin-top: 350px;
+    width: 100%;
+    left: 0;
+    position: relative;
+}
+
+.block_l {
+    width: 320px;
+    padding: 20px;
+    position: absolute;
+    bottom: 519px;
+    background: #1e2d69;
+    left: 100px;
+    border-radius: 15px 88px 16px 15px;
+}
+
+.block_r {
+    width: 398px;
+    padding: 20px;
+    position: absolute;
+    background: #1e2d69;
+    right: 271px;
+    border-radius: 10px;
+    color: white;
+    font-family: Georgia, Arial, sans-serif;
+    bottom: 519px;
+}
+.wr_icons span {
+    padding: 8px;
+    background: black;
+    overflow: hidden;
+    margin-right: 5px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.wr_icons span:hover {
+    background: #212121;
+}
+.wr_icons span:nth-child(1) img {
+    position: relative;
+    bottom: -2px;
+}
+.wr_icons span:nth-child(2) img {
+    position: relative;
+    bottom: -6px;
+}
+.wr_icons span:nth-child(3) img {
+    position: relative;
+    bottom: -10px;
+}
+.wr_progress{
+    position: relative;
+}
+.progress_fondo {
+    width: 100%;
+    background: #15204a;
+    border-radius: 10px;
+    padding: 3px;
+}
+.progress_act {
+    width: 75%;
+    height: 10px;
+    /* background: red; */
+    border-radius: 5px;
+    position: relative;
+    background-image: linear-gradient(to right, #ffa097 , #fc4e93);
+}
+.bola {
+    width: 8px;
+    height: 8px;
+    background: white;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    top: 1px;
+}
+.wr_gb {
+    position: relative;
+    margin-top: 10px;
+}
+.gb100 {
+    position: absolute;
+    right: 0;
+}
+.you {
+    color: #aeadad;
+    font-family: Raleway;
+}
+.you b {
+    color:white;
+}
+.wr_tooltip{
+    position: relative;
+}
+
+.tooltip {
+    background: white;
+    padding: 10px;
+    color: #4b4b4b;
+    display: inline-block;
+    border-radius: 10px 10px 0px 10px;
+    position: absolute;
+    right: 0;
+    top: -58px;
+    font-size: 10px;
+}
+.tooltip b {
+    font-size: x-large;
+    color: black;
+    margin-right: 10px;
+}
+.kvadrat {
+    width:10px
+    height: 10px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    background-image: linear-gradient(45deg, white 50%, transparent 50%);
+}
