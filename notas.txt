@@ -5,3 +5,75 @@ aki otros comentarios
 
 //practicar flex con un juego
 https://flexboxfroggy.com/#es
+
+
+---------------------------------------------------------------
+.wr_res_link {
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-content: center; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    /* grid-template-rows: repeat(2, 256px); */
+    gap: 2px;
+    background: #F2F2F2;
+    padding: 10px 16px;
+}
+
+span.res_link {
+    border: 1px solid #1588e4;
+    border-radius: 3px;
+    background: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-block;
+    /* min-width: 80px; */
+    text-align: center;
+    box-sizing: border-box;
+    /* margin-bottom: 5px; */
+    padding: 1px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+---------------------------------
+.wr_strong_btns_inner {
+    /* background: #88f2ff; */
+    overflow: hidden;
+    margin: 5px 0 0;
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 5px;
+    justify-content: space-between;
+}
+
+
+
+
+
+.wr_strong_btns_inner .btn {
+    width: 50%;
+    background: #1b89e1;
+    border: 1px solid #2c7fc1;
+    padding: 5px;
+    transition: 0.3s;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
