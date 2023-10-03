@@ -1,5 +1,8 @@
 L:\DESARROLLO\Documentación\Formación\Front\Curso HTML-CSS 2023
 
+//javascript
+L:\DESARROLLO\Documentación\Formación\Front\Curso HTML-CSS 2023\JAVASCRIPT
+
 aki otros comentarios
 
 
@@ -77,3 +80,8 @@ span.res_link {
     align-content: center;
     align-items: center;
 }
+
+
+*********************************************************************
+poner en head
+<link rel="icon" type="image/png" href="./images/favicon-32x32.png">

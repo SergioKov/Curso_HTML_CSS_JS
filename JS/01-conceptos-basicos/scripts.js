@@ -234,3 +234,190 @@ const generateWord2 = (w1, w2, w3) => {
     return rand1 + rand2 + rand3;
 };
 console.log(generateWord2('hola', 'Adios', 'Mano'));
+
+const randomNumberArray = arr => {
+    //if (arr.length !== 5) return false;
+    let rand = Math.floor(Math.random() * arr.length);
+    console.log(arr[rand]);
+
+    /*for (let index = 0; index < arr.length; index++) {
+        let rand = Math.floor(Math.random() * arr.length);
+        console.log(arr[rand]);
+    }
+    */
+};
+randomNumberArray([0, 1, 2, 3, 4, 55, 99, 88, 66, 33, 11, 44, 77, 22, 55, 66, 987, 654, 321, 654, 444]);
+
+//ARRAYS
+/*
+  - Crea una función que reciba un array con 3 números. La función deberá imprimir por consola.
+
+  - "La suma de todos los números es:[suma]"
+  - "La media de todos los números es:[media]"
+  - "El mayor es [mayor] y el menor es [menor]"
+*/
+const getMinMaxSumFromArray = arr => {
+    let suma = arr[0] + arr[1] + arr[2];
+    let media = (arr[0] + arr[1] + arr[2]) / 3;
+    let mayor = Math.max(...arr);
+    let menor = Math.min(...arr);
+
+    console.log(`
+    - La suma de todos los números es: ${suma}\n
+    - La media de todos los números es:${media}\n
+    - El mayor es ${mayor} y el menor es ${menor}    
+    `);
+};
+getMinMaxSumFromArray([55, 3, 99]);
+
+/*
+- Crea una función que reciba un array con 5 números del 0 al 10 (a tu elección). 
+Dentro de la función genera un número aleario entre 0 y 10. 
+La función deberá decir si el array contiene ese número y en qué posición está o si no lo contiene.
+*/
+const getNumberRandomFromArray = arr => {
+    let rand = Math.floor(Math.random() * 11);
+    console.log(`rand: ${arr}`);
+
+    let pos = arr.indexOf(rand);
+    console.log(`pos: ${pos}`);
+
+    if (arr.includes(rand)) {
+        console.log(`El array [${arr}] SI contiene el valor ${rand} y su posición es ${pos} `);
+    } else {
+        console.log(`El array [${arr}] NO contiene el valor ${rand}`);
+    }
+};
+getNumberRandomFromArray([1, 2, 3, 4, 5]);
+
+/*
+- Crea una función que reciba un array vacío y lo devuelva con 3 números aleatorios entre 0 y 100.
+*/
+const getArrRandom = arr => {
+    //modo1
+    let rand1 = Math.floor(Math.random() * 101);
+    let rand2 = Math.floor(Math.random() * 101);
+    let rand3 = Math.floor(Math.random() * 101);
+    arr.push(rand1, rand2, rand3);
+
+    //modo2
+    /*
+    arr.push(Math.floor(Math.random() * 101));
+    arr.push(Math.floor(Math.random() * 101));
+    arr.push(Math.floor(Math.random() * 101));
+    */
+    console.log(`El array con random: [${arr}] `);
+};
+getArrRandom([]);
+
+/*
+- Crea una función que reciba un array de 5 números. 
+Dentro de esa función crea dos arrays vacíos llamados even (pares) y odd (impares), 
+después multiplica cada uno de los números del array recibido por un número aleatorio entre 1 y 10, 
+si el resultado es par, guárdalo en el array de pares, 
+si es impar, en el array de impares, 
+al final, imprime los 3 arrays por consola.
+*/
+const getArrWith2Arr = arr => {
+    let arr1 = [];
+    let arr2 = [];
+};
+
+const numbers = [1, 2, 3, 4, 5, 7, 8];
+const newNumbers = numbers.map(number => {
+    return number * 2;
+});
+console.log(newNumbers);
+
+const filterNumbers = numbers.filter(number => {
+    //return number % 2 === 0;
+    return number % 2 === 0 && number; //filtrar
+});
+console.log(filterNumbers);
+
+const everyNumbers = numbers.every(number => {
+    return number % 2 === 0; //filtrar
+});
+console.log(everyNumbers);
+
+//sort
+const words = ['Pedro', 'gato', 'perro', 'arbol', 'Sergio'];
+const sortedWords = words.sort((a, b) => {
+    if (a.toLowerCase() > b.toLowerCase()) return 1;
+    if (a.toLowerCase() < b.toLowerCase()) return -1;
+    return 0;
+});
+console.log(sortedWords);
+
+const result2 = numbers.filter(number => number).map(number => number + 1);
+console.log(result2);
+
+const result = numbers.reduce((acc, prev) => {
+    //return prev * acc;
+    if (prev) {
+        return prev + acc;
+    } else {
+        return acc;
+    }
+});
+console.log(result);
+
+const result3 = numbers.reduce((acc, prev, index) => {
+    if (index <= 2) return prev + acc;
+    return prev * acc;
+});
+console.log(result3);
+
+const result4 = numbers.reduce((acc, prev, index) => {
+    return index <= 2 ? prev + acc : prev * acc;
+});
+console.log(result4);
+
+console.log('------------------------------------------ ');
+//----------------------------------------------------------------------------//
+//ejercicios callback
+/*
+- Crea una función que reciba un array de números 
+y muestre por consola cada número multiplicado por su índice en el array
+*/
+const getEveryArray = arr => {
+    const res = arr.map((el, i) => {
+        return el * i;
+    });
+    return res;
+};
+console.log(getEveryArray([2, 4, 6, 8]));
+
+/*
+- Crea una función que reciba un array de palabras y devuelva un array con las mismas palabras en mayúsculas.
+*/
+const getMayus = arr => {
+    const res = arr.map(el => {
+        return el.toUpperCase();
+    });
+    return res;
+};
+console.log(getMayus(['aaa', 'bbb', 'ccc']));
+
+/*
+- Crea una función que reciba un array de palabras y una letra. La función devolerá un array con las palabras que comiencen por esa letra, si no hay mostrará un mensaje por consola diciendo que ninguna palabra coincide.
+*/
+const getArrByLetter = (arr, letra) => {
+    const filteredWords = arr.filter(palabra => {
+        return palabra.startsWith(letra);
+    });
+    if (filteredWords.length > 0) return filteredWords;
+    else return `Del array [${arr}] ninguna palabra empieza por '${letra}'`;
+};
+console.log(getArrByLetter(['aaa', 'bbb', 'ccc'], 'a'));
+console.log(getArrByLetter(['aaa', 'bbb', 'ccc'], 'z'));
+
+/*
+- Crea una función que reciba un array de 10 números e imprima por consola la suma de todos los valores del array.
+*/
+const getSum = arr => {
+    return arr.reduce((acc, prev) => {
+        return acc + prev;
+    });
+};
+console.log(getSum([2, 2, 2]));
