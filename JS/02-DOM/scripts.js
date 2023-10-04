@@ -96,6 +96,7 @@ window.addEventListener('keyup', ev => {
 - Crea un array con 5 palabras. Añade un h2 a tu HTML y ponle un id. Añade dos botones con el texto previus y next respectívamente. Haz que los botones cambien el texto del h2 con las palabras del array, cuando llegues a la última volverás a la primera si pulsas next y cuando estés en la primera podrás volver a la última dandole a previous.
 */
 const arr = ['manzana', 'pera', 'banana', 'cereza', 'piña', 'David', 'Sergio', 'Carlos'];
+
 const h2 = document.createElement('h2');
 h2.id = 'title2';
 h2.textContent = arr[0];
@@ -103,25 +104,39 @@ h2.textContent = arr[0];
 const h4 = document.createElement('h4');
 h4.textContent = arr;
 
+let index = 0;
+
 const goNext = ev => {
-    console.log(ev);
+    //console.log(ev);
+    /*
     let pos = arr.indexOf(h2.textContent);
     if (pos < arr.length - 1) {
         h2.textContent = arr[pos + 1];
     } else {
         h2.textContent = arr[0];
     }
+    */
+
+    index++;
+    if (index > arr.length - 1) index = 0;
+    h2.textContent = arr[index];
     console.log(h2.textContent);
 };
 
 const goPrev = ev => {
+    /*
     let pos = arr.indexOf(h2.textContent);
     if (pos > 0) {
         h2.textContent = arr[pos - 1];
     } else {
         h2.textContent = arr[arr.length - 1];
     }
+    */
+
+    if (index == 0) index = arr.length - 1;
+    h2.textContent = arr[index];
     console.log(h2.textContent);
+    index--;
 };
 
 const b_next = document.createElement('button');
@@ -139,3 +154,16 @@ b_prev.addEventListener('click', ev => {
 });
 
 document.body.append(h2, h4, b_prev, b_next);
+
+//-----------------------------------//
+const fetchData = async url => {
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+fetchData('');
