@@ -1,0 +1,22 @@
+[
+  {
+    "userId": "e65e1490-c230-4043-80bc-ea32fee5f57c",
+    "title": "Mr.",
+    "name": "Andrea Correa",
+    "age": 80,
+    "username": "Andrea47",
+    "email": "Andrea.Correa@hotmail.com",
+    "profileImage": "https://randomuser.me/api/portraits/women/61.jpg",
+    "active": false
+  },
+  {
+    "userId": "356236ef-a50c-4bc7-9fa6-66450119634f",
+    "title": "Miss",
+    "name": "Carles Méndez",
+    "age": 25,
+    "username": "Carles_Fay22",
+    "email": "Carles.King30@yahoo.com",
+    "profileImage": "https://randomuser.me/api/portraits/men/6.jpg",
+    "active": true
+  }
+]

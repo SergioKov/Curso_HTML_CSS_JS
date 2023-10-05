@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background: lightgrey;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+}
+button{
+    color: white;
+}
+.btn {
+    border: 1px solid grey;
+    padding: 20px;
+    margin: 10px 10px 0 0;
+    width: 50px;
+    display: inline-block;
+    background: #ccc;
+    text-align: center;
+}
+.wr_btns {
+    /* display: flex; */
+    justify-content: space-around;
+    background: aqua;
+    padding: 10px;
+    border: 1px solid #058484;
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 10px;
+}
+.red{
+    background: red;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.purple{
+    background: purple;
+}
+.brown{
+    background: brown;
+}
+.orange{
+    background: orange;
+}
+.black{
+    background: black;
+}

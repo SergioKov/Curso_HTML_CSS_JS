@@ -2,7 +2,8 @@
 
 ## DOM
 
-- Partiendo de este HTML selecciona en JavaScript el h3 y utilizándolo como punto de partida imprime la información de todos los elementos que hay en formato "familia": Soy un h3 con el id... y la clase... mi padre es un ... con.... mi hermano es un ... con el id... la clase... y el texto...
+- Partiendo de este HTML selecciona en JavaScript el h3 y utilizándolo como punto de partida imprime la información de todos los elementos que hay en formato "familia":
+  Soy un h3 con el id... y la clase... mi padre es un ... con.... mi hermano es un ... con el id... la clase... y el texto...
 
 <header id="header" class="header">
   <h1 id="main-title" class="title title--big">Soy un título</h1>

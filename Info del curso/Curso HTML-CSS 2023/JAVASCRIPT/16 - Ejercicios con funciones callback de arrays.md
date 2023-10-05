@@ -1,3 +1,31 @@
+IP134   254   suma 254
+
+IP130   8    suman 12  en IP130
+IP-134  3
+IP XXX  1
+
+IA217   3	 suma IA  4 
+IA123	1
+
+IP136   1    suma   1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Ejercicios
 
 ## Arrays métodos callback
