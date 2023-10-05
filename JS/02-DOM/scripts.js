@@ -166,4 +166,33 @@ const fetchData = async url => {
     }
 };
 
-fetchData('');
+//fetchData('');
+
+//----------------------------------
+const originalNames = ['Laura', 'Ana', 'Carlos'];
+console.log('originalNames: ' + originalNames);
+
+const sortNames = names => {
+    // con 'names.sort' se modifica el array original
+    /*const sortedNames = names.sort((a, b) => {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+    */
+
+    // con '[...names].sort' NO se modifica el array original ya que se hace copia
+    const sortedNames = [...names].sort((a, b) => {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+    });
+
+    console.log('sortedNames: ' + sortedNames);
+};
+sortNames(originalNames);
+console.log('originalNames: ' + originalNames);
+
+//---------------
+
+const boxElement = document.querySelector('.box');
